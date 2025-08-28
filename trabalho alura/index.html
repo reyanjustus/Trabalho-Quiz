@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre o Batman</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz sobre o Batman</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Qual é o nome verdadeiro do Batman?</p>
+                <label><input type="radio" name="q1" value="Clark Kent"> Clark Kent</label>
+                <label><input type="radio" name="q1" value="Bruce Wayne"> Bruce Wayne</label>
+                <label><input type="radio" name="q1" value="Tony Stark"> Tony Stark</label>
+            </div>
+
+            <div class="question">
+                <p>2. Qual é o nome da cidade onde o Batman mora?</p>
+                <label><input type="radio" name="q2" value="Gotham City"> Gotham City</label>
+                <label><input type="radio" name="q2" value="Central City"> Central City</label>
+                <label><input type="radio" name="q2" value="Metropolis"> Metropolis</label>
+            </div>
+
+            <div class="question">
+                <p>3. Quem é o principal inimigo do Batman?</p>
+                <label><input type="radio" name="q3" value="Lex Luthor"> Lex Luthor</label>
+                <label><input type="radio" name="q3" value="Coringa"> Coringa</label>
+                <label><input type="radio" name="q3" value="Mulher-gato"> Mulher-gato</label>
+            </div>
+
+            <div class="question">
+                <p>4. Qual é o nome do ajudante do Batman?</p>
+                <label><input type="radio" name="q4" value="Batgirl"> Batgirl</label>
+                <label><input type="radio" name="q4" value="Alfred"> Alfred</label>
+                <label><input type="radio" name="q4" value="Robin"> Robin</label>
+            </div>
+
+            <div class="question">
+                <p>5. Qual é o nome da vilã que é uma das principais inimigas do Batman e também uma anti-heroína, conhecida por sua relação ambígua com ele?</p>
+                <label><input type="radio" name="q5" value="Selina Kyle (Mulher-Gato)"> Selina Kyle (Mulher-Gato)</label>
+                <label><input type="radio" name="q5" value="Talia al Ghul"> Talia al Ghul</label>
+                <label><input type="radio" name="q5" value="Hera-venenosa"> Hera-venenosa</label>
+            </div>
+
+            <div class="question">
+                <p>6. Qual é o principal veículo do Batman?</p>
+                <label><input type="radio" name="q6" value="DeLorean"> DeLorean</label>
+                <label><input type="radio" name="q6" value="Chitty Chitty Bang Bang"> Chitty Chitty Bang Bang</label>
+                <label><input type="radio" name="q6" value="Batmóvel"> Batmóvel</label>
+            </div>
+
+            <div class="question">
+                <p>7. Qual é o nome do fiel mordomo de Bruce Wayne?</p>
+                <label><input type="radio" name="q7" value="Alfred"> Alfred</label>
+                <label><input type="radio" name="q7" value="Jeeves"> Jeeves</label>
+                <label><input type="radio" name="q7" value="Giles"> Giles</label>
+            </div>
+
+            <div class="question">
+                <p>8. O que aconteceu com os pais de Bruce Wayne?</p>
+                <label><input type="radio" name="q8" value="Eles foram assassinados"> Eles foram assassinados</label>
+                <label><input type="radio" name="q8" value="Eles se mudaram para outra cidade"> Eles se mudaram para outra cidade</label>
+                <label><input type="radio" name="q8" value="Eles desapareceram"> Eles desapareceram</label>
+            </div>
+
+            <div class="question">
+                <p>9. Qual é o nome do local secreto onde o Batman guarda seus equipamentos?</p>
+                <label><input type="radio" name="q9" value="Fortaleza da Solidão"> Fortaleza da Solidão</label>
+                <label><input type="radio" name="q9" value="Batcaverna"> Batcaverna</label> 
+                <label><input type="radio" name="q9" value="Casa do Herói"> Casa do Herói</label>
+            </div>
+
+            <div class="question">
+                <p>10. Quem é o comissário de polícia aliado do Batman?</p>
+                <label><input type="radio" name="q10" value="Harvey Bullock"> Harvey Bullock</label>
+                <label><input type="radio" name="q10" value="Lois Lane"> Lois Lane</label>
+                <label><input type="radio" name="q10" value="James Gordon"> James Gordon</label>
+            </div>
+
+                <button type="button" onclick="checkAnswers()">Enviar Respostas</button>
+
+<div id="result"></div>
+
+
+    <script src="quiz.js"></script>
+</body>
+</html>
+

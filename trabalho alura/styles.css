@@ -1,0 +1,167 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    background-color: #222; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.8); /* Deixa a imagem mais escura */
+    animation: fadeIn 2s ease-out; /* Animação para transição suave */
+}
+
+/* Animação para o carregamento */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Container do quiz */
+.quiz-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    padding: 30px 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8); /* Sombra dramática */
+    text-align: center;
+    backdrop-filter: blur(10px); /* Desfoque no fundo */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Título do quiz */
+.header img {
+    width: 150px;
+    margin-bottom: 20px;
+    animation: logoAnimation 2s ease-in-out; /* Animação no logo */
+}
+
+@keyframes logoAnimation {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+h1 {
+    font-size: 42px;
+    color: #f39c12; /* Amarelo Batman */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); /* Sombra dramática */
+    margin-bottom: 30px;
+    font-family: 'Impact', sans-serif; /* Fonte impactante */
+    letter-spacing: 2px;
+}
+
+/* Perguntas e alternativas */
+.question {
+    margin-bottom: 25px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+/* Animação das perguntas */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.question p {
+    margin-bottom: 15px;
+}
+
+/* Estilo das respostas */
+label {
+    display: block;
+    margin: 12px 0;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+label:hover {
+    transform: scale(1.1);
+    color: #f39c12; /* Amarelo Batman */
+}
+
+/* Estilo dos inputs (botões de rádio) */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Estilo do botão de envio */
+button {
+    background-color: #f39c12; /* Amarelo Batman */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+    margin-top: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+button:hover {
+    background-color: #e67e22; /* Tom mais escuro */
+    transform: translateY(-4px); /* Efeito de elevação */
+}
+
+button:active {
+    transform: translateY(2px); /* Efeito de "pressionado" */
+}
+
+/* Estilo do resultado */
+/* Estilo do resultado */
+#result {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #f39c12; /* Amarelo Batman */
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.9), 0 0 25px rgba(255, 165, 0, 0.7); /* Efeito de luz suave */
+    opacity: 0;
+    animation: resultAnimation 2s ease-out forwards; /* Animação para o resultado */
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(0,0,0,0.7) 30%, rgba(255, 165, 0, 0.4) 70%); /* Gradiente Batman */
+    border: 3px solid #f39c12; /* Borda dourada */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animação do resultado */
+@keyframes resultAnimation {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Efeito ao passar o mouse */
+#result:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 165, 0, 0.8); /* Brilho do resultado */
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+/* Texto de mensagem de vitória ou derrota */
+#result span {
+    font-size: 36px;
+    font-family: 'Impact', sans-serif;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    display: block;
+    margin-top: 10px;
+}
